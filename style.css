@@ -26,6 +26,9 @@ header {
     height: 75px;
     z-index: 5;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 
 .container {
@@ -45,6 +48,13 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+}
+
+.navbar i {
+    width: 2.5rem;
+    cursor: pointer;
+    display: none;
+    color: #fff;
 }
 
 #top-logo {
@@ -215,7 +225,6 @@ nav div div a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(#C6FFDD, #FBD786, #f7797d); */
     background: #f4f7f8;
     padding-bottom: 4rem;
 }
@@ -230,9 +239,6 @@ nav div div a:hover {
 .gallery-main {
     padding-top: 30px;
     width: 80%;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
 }
 
 .gallery-main-img {
@@ -269,10 +275,6 @@ nav div div a:hover {
     align-items: center;
 }
 
-/* .contact-order-now {
-    padding-top: 3rem;
-} */
-
 .contact-order-now a button {
     outline: none;
     border: none;
@@ -293,21 +295,17 @@ nav div div a:hover {
     background: #17202A;
 }
 
-.contact-icons {
+.contact-order-now {
     font-size: 6rem;
 }
 
-/* .contact-icons:first-of-type{
-    padding-left: 8rem;
-} */
-
-.contact-icons i {
+.contact-order-now i {
     margin-right: 4rem;
     transition: 0.3s ease-in-out;
     color: salmon;
 }
 
-.contact-icons i:hover {
+.contact-order-now i:hover {
     transform: scale(1.1, 1.1);
 }
 
@@ -333,4 +331,140 @@ nav div div a:hover {
 
 .fa-youtube:hover {
     color: red;
+}
+
+@media only screen and (max-width: 786px){
+    html {
+        font-size: 50%;
+    }
+
+    .about-main {
+        flex-direction: column-reverse;
+    }
+
+    .about-main-text {
+        width: 100%;
+    }
+    
+    .about-main-text h1 {
+        font-size: 4.8rem;
+        color: #17202A;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .about-main-text p {
+        font-size: 3.6rem;
+        color: peru;
+    }
+    
+    .about-main-text p strong {
+        color: black;
+    }
+    
+    .about-main-img {
+        width: 80%;
+        padding-bottom: 5rem;
+    }
+
+    #menu-list {
+        /* overflow: hidden; */
+        transition: 0.5s;
+    }
+
+    #contact {
+        padding-bottom: 2rem;
+    }
+
+    .contact-main {
+        width: 80%;
+        padding-top: 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    nav #menu-list {
+        margin-top: 2.4rem;
+        width: 100%;
+        background: cyan;
+        position: absolute;
+        top: 7rem;
+        right: 0rem;
+        z-index: 2;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    nav #menu-list div {
+        display: block;
+        margin-top: 0.75rem;
+        margin-bottom: 1rem;
+        margin-right: 3rem;
+        text-align: right;
+    }
+
+    nav #menu-list div a {
+        color: #000;
+        font-size: 2.5rem;
+    }
+
+    #menu-list {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .navbar i {
+        display: block;
+        font-size: 2rem;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+        padding-top: 4rem;
+    }
+
+    .about-main-text h1 {
+        font-size: 3.6rem;
+        color: #17202A;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .about-main-text p {
+        font-size: 2rem;
+        color: peru;
+    }
+
+    .gallery-main-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery-main-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-main-div {
+        flex-direction: column;
+    }
+
+    .contact-order-now {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-links {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-order-now i {
+        margin-right: 0rem;
+    }
 }

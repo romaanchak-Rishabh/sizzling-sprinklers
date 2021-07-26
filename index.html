@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- title -->
-    <title>Sizzling Sprinklers</title>
+    <title>Sizzling Sprinkles</title>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="navbar">
-                <a href="#" id="top-logo">Sizzling Sprinklers</a>
+                <a href="#" id="top-logo">Sizzling Sprinkles</a>
                 <nav>
                     <div id="menu-list">
                         <div><a href="#about">About</a></div>
@@ -34,7 +34,7 @@
     <section id="about">
         <div class="about-main">
             <div class="about-main-text">
-                <h1>Sizzling Sprinklers</h1><br>
+                <h1>Sizzling Sprinkles</h1><br>
                 <p>We are manufacturers of sprinklers and lustre dust.</p>
                 <p>All kind of sprinklers & lustre dust are avialable in <strong>wholesale</strong> as well as <strong>retail.</strong></p>
                 <p>Delivery avialable accross India.</p>
@@ -74,10 +74,12 @@
             
             <div class="contact-main-div">
                 
-                <div class="contact-icons">
+                <div class="contact-order-now">
                     <h1 class="contact-heading">Contact Me</h1>
-                    <a href="https://www.facebook.com/Sizzling-Sprinkles-110034504675260/" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://wa.me/qr/2KUA5CXPM7IBN1" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+                    <div class="contact-links">
+                        <a href="https://www.facebook.com/Sizzling-Sprinkles-110034504675260/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/qr/2KUA5CXPM7IBN1" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+                    </div>
                 </div>
                 <div class="contact-order-now">
                     <h1 class="contact-heading">Order Now Fast!</h1>
@@ -86,5 +88,18 @@
             </div>
         </div>
     </section>
+    
+    <script>
+        var menuList = document.getElementById("menu-list");
+        menuList.style.maxHeight = "0px";
+        function togglemenu() {
+            if(menuList.style.maxHeight == "0rem") {
+                menuList.style.maxHeight = "30rem";
+            }
+            else {
+                menuList.style.maxHeight = "0rem";
+            }
+        }
+    </script>
 </body>
 </html>
